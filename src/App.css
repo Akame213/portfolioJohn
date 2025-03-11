@@ -1,0 +1,235 @@
+html, body, main, footer {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin:0;
+}
+h4{
+  font-size: 1.5rem;
+}
+.navbar {
+  background-color: #1e1e1e;
+  width: 100%;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+footer {
+  width: 100%;
+ 
+  background-color: #EEE;
+  color: #1e1e1e;
+  padding: 10px 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+.global {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  padding: 10px 20px 30px; 
+  align-items: flex-start; 
+  max-width: 90%;
+  margin: 0;
+}
+.hr-work{
+width: 19%;
+margin: 0 auto;
+border: solid 2px #247cfc;
+opacity: 1;
+}
+
+.contact, .information {
+  text-align: start;
+  margin: 0;
+}
+
+
+.contact h4, .information h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact ul, .information ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-logos {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 22px;
+}
+
+.logo-twitter, .logo-github, .logo-linkedin {
+  width: 30px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.information-footer ul li {
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  
+}
+.information-footer ul {
+  padding-left: 0; 
+  margin: 0;
+  list-style: none;
+}
+.banner-work {
+  width: 100vw;
+  height: 120px;
+}
+.information-footer ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("/public/chevron.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.fin {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #212429;
+  color: white;
+  width: 100%;
+}
+
+/* responsive mode tablette */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .global {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-start;
+   
+    
+  }
+
+  .contact, .information {
+    margin-bottom: 20px;
+  }
+
+  .social-logos {
+    margin-top: 10px;
+  }
+
+  .fin {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+/* Responsive pour mobile */
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .social-logos img {
+    width: 24px;
+    height: auto;
+  }
+
+  .contact .social-logos {
+    margin-bottom: 30px;
+  }
+
+  .information-footer h4 {
+    font-size: 1rem;
+    margin:0;
+    font-weight: bold;
+  }
+    .contact h4{
+      font-size: 1rem;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  .global {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 ;
+    
+   
+  }
+  h4{
+    font-size: 0.6rem;
+  }
+ 
+  .information-footer{
+
+  position:relative;
+  top: -65px;
+
+
+  }
+
+  ul li{
+    font-size: 0.7rem;
+  }
+  .information-footer ul li::before{
+
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/public/chevron-mobile.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+
+
+  }
+} 
