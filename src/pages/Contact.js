@@ -174,7 +174,17 @@ function ContactForm() {
                 }
                 .adresse-john {
                     width: 92%;
+                    height: 310px;
+                    position: relative;
+                    top: -10px;
                 }
+                    a[href^="tel"] {
+    all: unset;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
                 .hr-form, .hr-formm {
                     margin-left: 15px;
                     border: solid 1.5px #247cfc;
